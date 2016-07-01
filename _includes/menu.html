@@ -1,0 +1,6 @@
+<ul>
+  <li><a href="{{ site.baseurl }}/">Home</a></li>
+  {% for menu in site.data.menus %}
+    <li><a href="{{ menu.url | prepend: '/' | prepend: site.baseurl }}">{{ menu.title }}</a></li>
+  {% endfor %}
+</ul>

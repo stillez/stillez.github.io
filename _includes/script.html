@@ -1,0 +1,22 @@
+<script src="{{ "/js/jquery-3.0.0.min.js" | prepend: site.baseurl }}"></script>
+<script>
+  $(document).ready(function() {
+    $('.menu-toggle a').on('click', function() {
+      $('.menu').slideToggle();
+    });
+
+    responsiveResize = function() {
+      if ($(window).width() > 768) {
+        $('.menu').show();
+      } else {
+        $('.menu').hide();
+      }
+    }
+
+    responsiveResize();
+    $(window).resize(function() {
+      responsiveResize();
+
+    });
+  });
+</script>

@@ -1,0 +1,24 @@
+<article class="article">
+  {% if post.type %}
+    {% case post.type %}
+      {% when 'thumbnail' %}
+        {% include post-type-thumbnail.html %}
+      {% when 'video' %}
+        {% include post-type-video.html %}
+    {% endcase %}
+  {% endif %}
+  <div class="article-content">
+    <h3 class="article-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    <div class="article-time"><i class="fa fa-clock-o"></i> {{ post.date | date: "%b %-d, %Y" }}</div>
+    {% include tags.html %}
+    <div class="article-tags">{{ tags_content }}</div>
+    {% if post.intro %}
+    <p>{{ post.intro }}</p>
+    {% else %}
+    {{ post.excerpt}}
+    {% endif %}
+    <div class="readmore">
+      <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+    </div>
+  </div>
+</article>

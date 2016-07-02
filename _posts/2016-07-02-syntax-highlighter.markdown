@@ -69,11 +69,11 @@ class Container implements ArrayAccess
       <main>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <strong>tempor</strong> incididunt ut labore et dolore magna aliqua. Ut <a href="blah.html">enim</a> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p
+        </p>
       </main>
 
       <footer>
-          Copy right of Someone
+          Copyright of Someone
       </footer>
     </div>
   </body>
@@ -86,6 +86,7 @@ class Container implements ArrayAccess
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    /* Comment */
 }
 
 #id {

@@ -2,12 +2,14 @@
  * Syntax highlighting styles
  */
 .highlight {
+  font-family: Monaco, monospace;
   padding: 30px;
   border: 1px solid #eee;
 
   .highlighter-rouge & {
-    background: #fff;
+    background: #222222;
     overflow-x: auto;
+    color: #e3e2e0;
   }
 
   .c {
@@ -34,7 +36,7 @@
   }
   // Comment.Multiline
   .cp {
-    color: #999;
+    color: #e3e2e0;
     font-weight: bold
   }
   // Comment.Preproc
@@ -101,7 +103,11 @@
     color: #a00
   }
   // Generic.Traceback
+  .k {
+    color: #FF4E50;
+  }
   .kc {
+    color: #3bc7b8;
     font-weight: bold
   }
   // Keyword.Constant
@@ -130,21 +136,24 @@
     color: #d14
   }
   // Literal.String
+  .n {
+    color: #EDB92E;
+  }
   .na {
-    color: #008080
+    color: #e3e2e0
   }
   // Name.Attribute
   .nb {
-    color: #0086B3
+    color: #EDB92E
   }
   // Name.Builtin
   .nc {
-    color: #458;
+    color: #e3e2e0;
     font-weight: bold
   }
   // Name.Class
   .no {
-    color: #008080
+    color: #EDB92E
   }
   // Name.Constant
   .ni {
@@ -157,7 +166,7 @@
   }
   // Name.Exception
   .nf {
-    color: #900;
+    color: #c3cb4c;
     font-weight: bold
   }
   // Name.Function
@@ -166,13 +175,20 @@
   }
   // Name.Namespace
   .nt {
-    color: #000080
+    color: #3bc7b8
   }
   // Name.Tag
   .nv {
-    color: #008080
+    color: #e3e2e0
+  }
+  .nx {
+    color: #e3e2e0;
+    font-weight: bold;
   }
   // Name.Variable
+  .o {
+    color: #FF4E50;
+  }
   .ow {
     font-weight: bold
   }
@@ -206,7 +222,7 @@
   }
   // Literal.String.Char
   .sd {
-    color: #d14
+    color: #777777
   }
   // Literal.String.Doc
   .s2 {
@@ -234,7 +250,7 @@
   }
   // Literal.String.Regex
   .s1 {
-    color: #d14
+    color: #3bc7b8
   }
   // Literal.String.Single
   .ss {

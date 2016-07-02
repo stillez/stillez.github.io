@@ -4,7 +4,7 @@ title:  "Syntax Highlighter"
 date:   2016-07-02 01:27:00 +0700
 ---
 
-comming theme: Peacock contract, juicy
+Testing common syntax highlighter for some common languages.
 
 ```php
 <?php
@@ -15,10 +15,7 @@ use Closure;
 use ArrayAccess;
 
 /**
- * Theme: Juicy
- * Juicy.
- *
- * Copyright (c) 2014 Dayle Rees
+ * Comment block
  */
 class Container implements ArrayAccess
 {

@@ -19,3 +19,6 @@ github_username:  stillez
 
 # Build settings
 markdown: kramdown
+
+sass:
+  style: compressed
